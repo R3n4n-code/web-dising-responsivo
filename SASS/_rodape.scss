@@ -1,0 +1,22 @@
+@use 'variaveis';
+@use 'mixins';
+
+.rodape {
+  @include mixins.flex-column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  background-color: #0b0b24;
+  height: 6rem;
+  border: solid 3px #0b0b24;
+  height: 12rem;
+
+
+&__titulo {
+  display: block;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: variaveis.$cor-titulo;
+}
+}

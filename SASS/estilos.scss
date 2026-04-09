@@ -1,0 +1,34 @@
+@use 'base';
+@use 'nav';
+@use 'sessao';
+@use 'mixins';
+@use 'depoimento';
+@use 'rodape';
+@use 'variaveis';
+body {
+  background-color: #F8FAFC;
+
+header {
+  background-color: variaveis.$cor-fundo;
+  border-radius: 8px;
+  height: 7rem;
+
+}
+}
+
+img {
+  width: 100%;
+  height: 300px;
+}
+
+.hambuger {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hambuger {
+    color: red;
+    display: block;
+  }
+}
+
